@@ -4,6 +4,7 @@
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Code, ImageIcon, MessageSquare, Music, VideoIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 const tools=[
   {
@@ -45,6 +46,11 @@ const tools=[
 
 
 export default function DashboardPage() {
+  const router=useRouter()
+  const handleClick=(href : string)=>{
+    router.push(href)
+  }
+
   return (
     <div>
         <div className="mb-8 space-y-4">
@@ -56,7 +62,9 @@ export default function DashboardPage() {
           {
             tools.map((tool)=>(
               <Card key={tool.href}
-              className="p-4 border-black/5 flex items-center justify-between transition cursor-pointer hover:shadow-md">
+              className="p-4 border-black/5 flex items-center justify-between transition cursor-pointer hover:shadow-md"
+              onClick={()=>handleClick(tool.href)}
+              >
 
                 <div className="flex items-center gap-x-4 ">
                   <div className={cn('w-fit p-1 rounded-md',tool.bgColor)}>
