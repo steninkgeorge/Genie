@@ -1,3 +1,5 @@
+'use client'
+
 const Image=()=>{
     return (
         <div > image </div>
