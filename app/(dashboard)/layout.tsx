@@ -16,7 +16,7 @@ async function DashboardLayout({ children }: { children: React.ReactNode; }) {
             </div>
             <main className="md:pl-72">
 
-                <Navbar apiLimitCount={apiLimitCount}/>
+                <Navbar/>
                 {children}
             </main>
         </div>

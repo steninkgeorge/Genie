@@ -7,6 +7,8 @@ import { ArrowRight, Check, Code, ImageIcon, MessageSquare, Music, VideoIcon, Za
 import { Card } from "./ui/card";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
+import axios from "axios";
+import { useState } from "react";
 
 const tools=[
   {
@@ -49,8 +51,24 @@ const tools=[
 ]
 
 export const ProModal=()=>{
+    const [loading, setLoading] = useState(false)
 
     const proModal=useProModal()
+
+    const onSubscribe= async()=>{
+      try{
+        setLoading(true)
+        const response= await axios.get('/api/stripe')
+        window.location.href =  response.data.url;
+
+
+
+      }catch(error){
+        console.log(error, "STRIPE_CLIENT_ERROR")
+      }finally{
+        setLoading(false)
+      }
+    }
 
 
     return (
@@ -84,7 +102,7 @@ export const ProModal=()=>{
                 </DialogHeader>
 
                 <DialogFooter>
-                    <Button className="w-full" variant='premium'>
+                    <Button className="w-full" variant='premium' onClick={onSubscribe}>
                         upgrade
                         <Zap className="fill-white ml-2 w-4 h-4"/>
                     </Button>
