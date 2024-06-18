@@ -15,6 +15,7 @@ import { useState } from "react";
 import { Empty } from "@/components/empty";
 import { Loader } from "@/components/loader";
 import { useProModal } from "@/hooks/use-pro-modal";
+import toast from "react-hot-toast";
 
 
 export default function VideoPage() {
@@ -46,8 +47,10 @@ export default function VideoPage() {
       }catch(error:any){
         if(error?.response?.status === 403){
           proModal.onOpen()
+      }else{
+        toast.error("something went wrong")
       }
-        console.log(error)
+       
       }finally{
         router.refresh()
       }

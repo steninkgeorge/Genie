@@ -19,6 +19,8 @@ import { Loader } from "@/components/loader";
 import { UserAvatar } from "@/components/user-avatar";
 import { BotAvatar } from "@/components/bot-avatar";
 import { useProModal } from "@/hooks/use-pro-modal";
+import toast from "react-hot-toast";
+import { error } from "console";
 
 
 export default function Conversation() {
@@ -40,7 +42,6 @@ export default function Conversation() {
     const onSubmit=async (values : z.infer<typeof formSchema>)=>{
       try{
         
-        
         const userMessage : ChatCompletionRequestMessage ={ role: 'user', content:values.prompt}
 
         const newMessages=[...messages, userMessage];
@@ -57,8 +58,9 @@ export default function Conversation() {
       }catch(error:any){
         if(error?.response?.status === 403){
             proModal.onOpen()
+        }else{
+          toast.error("something went wrong")
         }
-        console.log(error)
       }finally{
         router.refresh()
       }

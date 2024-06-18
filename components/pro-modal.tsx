@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import axios from "axios";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const tools=[
   {
@@ -64,7 +65,7 @@ export const ProModal=()=>{
 
 
       }catch(error){
-        console.log(error, "STRIPE_CLIENT_ERROR")
+        toast.error("something went wrong")
       }finally{
         setLoading(false)
       }
