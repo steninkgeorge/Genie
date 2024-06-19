@@ -18,7 +18,8 @@ export async function GET(){
         if(!userId || !user ){
             return new NextResponse("unauthorized", {status:401})
         }
-         const userSubscription= await prismadb.userSubscription.findUnique({
+        
+        const userSubscription= await prismadb.userSubscription.findUnique({
             where:{
                 userId:userId
             }
@@ -64,5 +65,6 @@ export async function GET(){
 
     }catch(error){
         console.log("[STRIPE_ERROR]",error)
+        return new NextResponse('Internal Error',{status:500})
     }
 }
