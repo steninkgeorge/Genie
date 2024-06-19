@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# AI SaaS Project
+
+## Overview
+This project is an AI SaaS platform designed to generate AI-based content, including chat completions, images, music, code, and video generations. Built using Next.js, Prisma, Supabase, Clerk, OpenAI, Replicate AI, Stripe, and Crisp, the platform offers a free trial of 5 generations and allows users to upgrade to a pro subscription for additional features and increased usage limits.
+
+## Features
+- **Free Trial:** 5 free AI generations for new users.
+- **API Limit Count:** 
+- **Subscription:** 
+- **Stripe Integration:**=
+- **Authentication:** 
+- **Authorization:** 
+- **Landing Page:**
+- **Protected Routes:** 
+- **Webhook:** 
+- **Prisma ORM:**
+
+## Technologies Used
+- **Next.js:** Frontend framework for server-side rendering and static site generation.
+- **Prisma:** ORM for database management and operations.
+- **Supabase:** Backend service providing database and authentication.
+- **Clerk:** Authentication service for secure user login.
+- **OpenAI:** AI model for generating chat completions.
+- **Replicate AI:** AI models for generating images, music, code, and videos.
+- **Stripe:** Payment processing and subscription management.
+- **Crisp:** Customer messaging platform for user support.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+Ensure you have the following installed:
+- Node.js
+- npm or yarn
+- PostgreSQL (or any database supported by Prisma)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/ai-saas-project.git
+    cd ai-saas-project
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Set up environment variables:**
+    Create a `.env` file in the root directory and add your configuration:
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+    NEXT_PUBLIC_SUPABASE
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
