@@ -5,49 +5,49 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
 const testimonials= [
    
     {
-        "name": "Stenin",
+        "name": "Stenin K George",
         "avatar": "M",
         "title": "Product Manager",
         "description": "Finally a tool that I can work with seamlessly :)."
     },
     {
-        "name": "Akhil",
+        "name": "Akhil M",
         "avatar": "J",
         "title": "Data Analyst",
         "description": "This application has transformed the way I work!"
     },
     {
-        "name": "Jobin",
+        "name": "Jobin Jose",
         "avatar": "S",
         "title": "UX Designer",
         "description": "I love the intuitive design and seamless experience."
     },
     {
-        "name": "Sam",
+        "name": "Sam A",
         "avatar": "M",
         "title": "Project Coordinator",
         "description": "This app makes project management so much easier."
     },
     {
-        "name": "Jewel",
+        "name": "Jewel Maria",
         "avatar": "L",
         "title": "Marketing Specialist",
         "description": "A must-have tool for all marketing professionals."
     },
     {
-        "name": "Ashwin",
+        "name": "Ashwin Sabu",
         "avatar": "D",
         "title": "IT Consultant",
         "description": "An indispensable tool for IT projects."
     },
     {
-        "name": "Pavan",
+        "name": "Pavan R",
         "avatar": "E",
         "title": "Graphic Designer",
         "description": "The best application for creative professionals."
     },
     {
-        "name": "Roshan",
+        "name": "Roshan ",
         "avatar": "J",
         "title": "Software Developer",
         "description": "A fantastic tool that simplifies my workflow."
