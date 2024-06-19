@@ -3,30 +3,56 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
 
 const testimonials= [
+   
     {
-        name:"Antonio",
-        avatar:'A',
-        title:"Software Engineer",
-        description:"This is the best application I've used"
+        "name": "Stenin",
+        "avatar": "M",
+        "title": "Product Manager",
+        "description": "Finally a tool that I can work with seamlessly :)."
     },
     {
-        name:"Antonio",
-        avatar:'A',
-        title:"Software Engineer",
-        description:"This is the best application I've used"
+        "name": "Akhil",
+        "avatar": "J",
+        "title": "Data Analyst",
+        "description": "This application has transformed the way I work!"
     },
     {
-        name:"Antonio",
-        avatar:'A',
-        title:"Software Engineer",
-        description:"This is the best application I've used"
+        "name": "Jobin",
+        "avatar": "S",
+        "title": "UX Designer",
+        "description": "I love the intuitive design and seamless experience."
     },
     {
-        name:"Antonio",
-        avatar:'A',
-        title:"Software Engineer",
-        description:"This is the best application I've used"
+        "name": "Sam",
+        "avatar": "M",
+        "title": "Project Coordinator",
+        "description": "This app makes project management so much easier."
+    },
+    {
+        "name": "Jewel",
+        "avatar": "L",
+        "title": "Marketing Specialist",
+        "description": "A must-have tool for all marketing professionals."
+    },
+    {
+        "name": "Ashwin",
+        "avatar": "D",
+        "title": "IT Consultant",
+        "description": "An indispensable tool for IT projects."
+    },
+    {
+        "name": "Pavan",
+        "avatar": "E",
+        "title": "Graphic Designer",
+        "description": "The best application for creative professionals."
+    },
+    {
+        "name": "Roshan",
+        "avatar": "J",
+        "title": "Software Developer",
+        "description": "A fantastic tool that simplifies my workflow."
     }
+    
 ]
 export const LandingContent=()=>{
     return (
