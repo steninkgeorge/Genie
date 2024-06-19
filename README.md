@@ -6,15 +6,15 @@ This project is an AI SaaS platform designed to generate AI-based content, inclu
 
 ## Features
 - **Free Trial:** 5 free AI generations for new users.
-- **API Limit Count:** Track usage and limit API requests.
-- **Subscription:** Upgrade to pro for more free generations and additional features.
-- **Stripe Integration:** Handle payments and subscriptions seamlessly.
-- **Authentication:** Secure user authentication using Clerk.
-- **Authorization:** Protect routes and manage user access.
-- **Landing Page:** Engaging and informative landing page.
-- **Protected Routes:** Secure sensitive routes to ensure only authorized access.
-- **Webhook:** Handle real-time updates and events.
-- **Prisma ORM:** Efficient database management with Prisma.
+- **API Limit Count:** 
+- **Subscription:** 
+- **Stripe Integration:**=
+- **Authentication:** 
+- **Authorization:** 
+- **Landing Page:**
+- **Protected Routes:** 
+- **Webhook:** 
+- **Prisma ORM:**
 
 ## Technologies Used
 - **Next.js:** Frontend framework for server-side rendering and static site generation.
