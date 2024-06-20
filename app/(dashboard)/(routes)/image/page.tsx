@@ -49,8 +49,10 @@ export default function ImagePage() {
       }catch(error:any){
         if(error?.response?.status === 403){
           proModal.onOpen()
+         
+
       }else{
-        toast.error("something went wrong")
+        toast.error(error)
       }
         
       }finally{
